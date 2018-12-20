@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <ProjectGuid>{1252B495-66E9-A803-1941-865F62000066}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_11;UNITY_2018_2;UNITY_2018;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_WEBGL;UNITY_WEBGL;UNITY_WEBGL_API;UNITY_DISABLE_WEB_VERIFICATION;UNITY_GFX_USE_PLATFORM_VSYNC;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_VR;ENABLE_SPATIALTRACKING;ENABLE_IL2CPP;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE;UNITY_POST_PROCESSING_STACK_V2</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>WebGL:20</UnityBuildTarget>
+    <UnityVersion>2018.2.11f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Decal.cs" />
+    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\DecalBuilder.cs" />
+    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\DecalUtils.cs" />
+    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\MeshBuilder.cs" />
+    <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\PolygonClippingUtils.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\BillboardLighting\LB_LightingBoxBillboard.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\EditorHotkeysTracker.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_AutoFocus.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_CameraMove.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_CheckforUpdates.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_LightingBox.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_LightingBoxHelper.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_LightingProfile.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_ProfileTrigger.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_RenderBox.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_SettingsMenu.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\LB_Stack2_DOF_AutoFocus.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PlayerPrefsX.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Common\ImageEffectHelper.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Common\MinAttribute.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Common\RenderTextureUtility.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\DepthOfField\DepthOfField.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Scripts\ImageEffectBase.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Scripts\ImageEffects.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Scripts\PostEffectsHelper.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Scripts\SunShafts.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Scripts\Triangles.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\PostEffects\GlobalFog\GlobalFog.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\Terrain\LB_Grass_Controll.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\Terrain\LB_LightingBoxTerrain.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\Terrain\LB_Terrain_2.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\TerrainDeformation\LB_Wheel_Deformer.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\TerrainDeformation\License.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\TerrainDeformation\TerrainDeformer.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\Weather\LB_Snow_Controller.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\Weather\LB_Wind.cs" />
+    <Compile Include="Assets\LightingBox2\Scripts\Weather\Snow_Trigger.cs" />
+    <Compile Include="Assets\LightingBox2\StochasticSSR\Scripts\StochasticSSR.cs" />
+    <Compile Include="Assets\LightingBox2\VolumetricLight\Scripts\VolumetricLight.cs" />
+    <Compile Include="Assets\LightingBox2\VolumetricLight\Scripts\VolumetricLightRenderer.cs" />
+    <Compile Include="Assets\LightingBox2\VolumetricLight\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\AllCreatedPrefabs.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\ButtonPressed.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\ButtonShowTooltips.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\ButtonToggle.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\ChangeTextBackImage.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\ClipWall.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\CreatedObject.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\CreatedWindow.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\FPSShow.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\GISimulate.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\LightOutput.cs" />
+    <Compile Include="Assets\LightMenu\Scripts\PressAndAdd.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\AdvancedGizmo\Gizmo.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\AdvancedGizmo\Hover.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\FPS_.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\GizmoFollow.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\maxCamera.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\MyCanvasSetting.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\RenderingModeSwitch.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\common\SceneSwitch.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\CappedSectionBox.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\CappedSectionCorner.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\CappedSectionFollow.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\PlaneHover.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\ScaleToColor.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\UVScaler.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\Intersected_geometry\SectionPlaneHatched.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\BackfaceOffsetSettings.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\CrossSectionObjectSetup.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\CubeSectionExample.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\CylinderSectionExample.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\EnableShadersKeyword.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\GridClone.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\PieSectionExample.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\Planar_xyzClippingSection.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\PlaneSectionEditor.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\Precision.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\RectGizmo.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\SectionSetup.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\SetCustomDepthNormalsShader.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\SinglePlaneSection.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\SphereSectionExample.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\SwitchSettings.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\ToolTipManager.cs" />
+    <Compile Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\scripts\TooltipObject.cs" />
+    <Compile Include="Assets\Museum_VR_Ancient_Cultures_Pack\ExtendedFlycam.cs" />
+    <Compile Include="Assets\Museum_VR_Ancient_Cultures_Pack\fps.cs" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionLm-D.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\GlassStainedBumpDistort.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionTD.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionGlassStainedBumpDistort.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CGIncludes\UnityStandardShadow_CS.cginc" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SurfaceShader_Plane.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionStandardRoughness.shader" />
+    <None Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSection-Unlit-Color.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionTCBS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SurfaceShaderMetalBumped.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\IntersectedPrepare.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingBoxGlassStainedBumpDistort.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\AdvancedGizmo\Unlit-Color.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionD.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SurfaceShader.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CGIncludes\section_clipping_CS.cginc" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingBoxStandardSpecular.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionBD.shader" />
+    <None Include="Assets\LightingBox2\Scripts\PostEffects\DepthOfField\Resources\DepthOfField.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionTBS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingBoxBS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionSurface.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionDec.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionSurfaceIntersected.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingCornerStandard.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\StencilledTextureSimple.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SurfaceShaderMetal.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingCornerSurfaceStd.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionRS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingBoxSurfaceStd.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionStandardSpecular.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\IntersectedHatch.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionSurfaceVC.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CGIncludes\UnityStandardCore_CS.cginc" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\StandardDouble.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionGlassStainedBumpDistortWS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\Unlit-Normal.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\Internal-DepthNormalsTextureCustom.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\GlassStainedBumpDistortWS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\Unlit-NormalTinted.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionLm-B.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\textures\DitherSurface.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionSurfaceMetal.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\capped_setups\StencilledTextureStandard.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionRD.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSection-Unlit-Normal.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingBoxStandard.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CGIncludes\UnityStandardCoreForward_CS.cginc" />
+    <None Include="Assets\LightingBox2\Scripts\PostEffects\DepthOfField\Resources\MedianFilter.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionBS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSection-Unlit-NormalHatchPrepare.shader" />
+    <None Include="Assets\LightingBox2\Shaders\StandardDoubleSided.shader" />
+    <None Include="Assets\LightingBox2\Scripts\PostEffects\DepthOfField\Resources\BokehSplatting.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionSurfaceMetalBumped.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SelectiveStencilHatch.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionTS.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\Internal-DepthNormalsTexture.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\Unlit-ColorDoubleS.shader" />
+    <None Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\LightMenu\Assets\Shaders\NewUnlitShader.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionSurfaceHatchPrepare.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingCornerStandardSpecular.shader" />
+    <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionStandard.shader" />
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTrackingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WebGLModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Locator">
+      <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Unity.Locator.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceTesting">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/PerformanceTesting/UnityEngine.PerformanceTesting.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GoogleAudioSpatializer">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpConfig">
+      <HintPath>F:/UnityProjects/NatureLightGithub/NatureLight/Assets/LightingBox2/Scripts/SharpConfig/SharpConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>C:/Users/张杰/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StandardEvents">
+      <HintPath>C:/Users/张杰/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{01ADF0BC-CA29-702E-E9AC-125B1D2755ED}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
