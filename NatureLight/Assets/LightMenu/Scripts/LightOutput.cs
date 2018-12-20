@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class LightOutput : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+
+    public Vector3 PointPosition;
+    public Vector3 WindowPosition;
+    public float WindowWidth; 
+    public float WindowHeight;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+        GetIllumination(PointPosition, WindowPosition,  WindowWidth, WindowHeight);
+
+    }
 
     //窗地比
     public float GetWindowGroundRatio(float WindowArea, float GroundArea)
@@ -37,33 +44,28 @@ public class LightOutput : MonoBehaviour {
         return Mathf.Round(100 * Factor) / 100f;
     }
 
+
     //室内某一点的天然光照度（侧窗）
-    public float GetIllumination(Vector3 PointPosition, GameObject Window)
+    public float GetIllumination(Vector3 PointPosition, Vector3 WindowPosition, float WindowWidth, float WindowHeight)
     {
 
+        float ElevationAngle_1 = Mathf.Atan(((WindowPosition.y + 0.5f * WindowHeight) - PointPosition.y) / (WindowPosition.z - PointPosition.z));
 
-     //   float Angle_1 = Mathf.Atan(Point);
-
-        float Angle_2 = 2;
- 
-
-        //立体角
-        float SolidAngle=0;
-
-        //仰角(高度角)
-        float ElevationAngle=0;
-
-        //天顶的亮度 cd/cm2
-        float LuminanceTop = 0;
-
-        //天空在 仰角上的亮度 
-        float Luminance = 0.3f * (1 + 2 * Mathf.Sin(ElevationAngle)) * LuminanceTop;
-
-        //这个点的照度
-        float Illumination = SolidAngle * Mathf.Cos(ElevationAngle);
+        float ElevationAngle_2 = Mathf.Atan(((WindowPosition.y - 0.5f * WindowHeight) - PointPosition.y) / (WindowPosition.z - PointPosition.z));
 
 
-        return Illumination;
+        float DirectionAngle_1 = Mathf.Atan(((WindowPosition.x + 0.5f * WindowWidth) - PointPosition.x) / (WindowPosition.z - PointPosition.z));
+
+        float DirectionAngle_2 = Mathf.Atan(((WindowPosition.x - 0.5f * WindowWidth) - PointPosition.x) / (WindowPosition.z - PointPosition.z));
+
+
+        float Sub = 4f * Mathf.Pow(Mathf.Sin(ElevationAngle_2), 3) - 3f * Mathf.Pow(Mathf.Cos(ElevationAngle_2), 2) - 4f * Mathf.Pow(Mathf.Sin(ElevationAngle_1), 3) + 3f * Mathf.Pow(Mathf.Cos(ElevationAngle_1), 2);
+        //采光系数
+        float DaylightFactor = (DirectionAngle_2-DirectionAngle_1)*Sub/(14f* Mathf.PI);
+
+        Debug.Log(DaylightFactor);
+   
+        return DaylightFactor;
     }
 
 

@@ -157,6 +157,7 @@
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionTD.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionGlassStainedBumpDistort.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CGIncludes\UnityStandardShadow_CS.cginc" />
+    <None Include="Assets\LightMenu\Shaders\LightShader.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SurfaceShader_Plane.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionStandardRoughness.shader" />
     <None Include="Assets\LightingBox2\Scripts\PostEffects\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
@@ -168,6 +169,7 @@
     <None Include="Assets\LightMenu\WorldSpaceTransitions\AdvancedGizmo\Unlit-Color.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionD.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\ShadersOther\SurfaceShader.shader" />
+    <None Include="Assets\LightMenu\Shaders\UnlitLightShader.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CGIncludes\section_clipping_CS.cginc" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\ClippingBoxStandardSpecular.shader" />
     <None Include="Assets\LightMenu\WorldSpaceTransitions\crossSection\CS_Shaders\CrossSectionBD.shader" />
