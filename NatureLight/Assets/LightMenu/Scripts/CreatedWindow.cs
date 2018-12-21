@@ -10,7 +10,6 @@ namespace CreateAndOperate
     {
 
         //区分不同的状态
-
         public GameObject Gizmo;
         public GameObject CrossSectionBox;
         public GameObject Window;
@@ -77,6 +76,14 @@ namespace CreateAndOperate
             }
             return NewState;
         }
+
+
+        public void GetPosition()
+        {
+
+        }
+
+
     }
 
 }

@@ -72,6 +72,8 @@ namespace CreateAndOperate
                     if (GameObjectAdd != null)
                     {
                         Destroy(GameObjectAdd);
+                        //
+                        FatherObject.GetComponent<AllCreatedPrefabs>().DestroyChild(GameObjectAdd);
                     }
 
                     //将鼠标样式改为不能加
@@ -104,7 +106,6 @@ namespace CreateAndOperate
 
             if (GameObjectAdd != null)
             {
-                FatherObject.GetComponent<AllCreatedPrefabs>().AllCreatedGameObject.Add(GameObjectAdd);
                 FatherObject.GetComponent<AllCreatedPrefabs>().NewSeletedGameObject(GameObjectAdd);
             }
         }

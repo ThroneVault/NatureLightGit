@@ -11,11 +11,15 @@ public class CappedSectionFollow : MonoBehaviour {
     private Vector3 tempPos;
     private Vector3 tempScale;
     private Quaternion tempRot;
-    public int index = 0;
-   // public int Count = 0;
-    public GameObject FatherObject;
 
-    AllCreatedPrefabs FatherScript;
+
+    //用来保存在allCreatedPrefabs中的信息，用来实时更新对应的参数
+    [HideInInspector]
+    public AllCreatedPrefabs FatherScript;
+    [HideInInspector]
+    public int index = 0;
+
+
 
     public bool followPosition = true;
     //public bool followRotation = true;
@@ -27,20 +31,6 @@ public class CappedSectionFollow : MonoBehaviour {
     }
     void Start()
     {
-
-        FatherScript =  FatherObject.GetComponent<AllCreatedPrefabs>();
-      //  Shader.SetGlobalVector("_SectionDirX"+index.ToString(), transform.right);
-
-        FatherScript.SectionDirX[index] = transform.right;
-        FatherScript.SectionDirY[index] = transform.up;
-        FatherScript.SectionDirZ[index] = transform.forward;
-        FatherScript.SectionCentre[index] = transform.position;
-        FatherScript.SectionScale[index] = transform.localScale;
-
-       // Shader.SetGlobalInt("_Count", Count);
-
-        //  Shader.SetGlobalVector("_SectionDirY", transform.up);
-        //  Shader.SetGlobalVector("_SectionDirZ", transform.forward);
         Shader.SetGlobalColor("_SectionColor", Color.black);
         SetSection();
     }
@@ -56,12 +46,17 @@ public class CappedSectionFollow : MonoBehaviour {
 			SetSection();
 		}
         //Shader.SetGlobalVector("_SectionDirX", transform.right);
-      //  Shader.SetGlobalVector("_SectionDirY", transform.up);
+        //  Shader.SetGlobalVector("_SectionDirY", transform.up);
         //Shader.SetGlobalVector("_SectionDirZ", transform.forward);
 
-        FatherScript.SectionDirX[index] = transform.right;
-        FatherScript.SectionDirY[index] = transform.up;
-        FatherScript.SectionDirZ[index] = transform.forward;
+
+        if (FatherScript != null)
+        {
+            FatherScript.SectionDirX[index] = transform.right;
+            FatherScript.SectionDirY[index] = transform.up;
+            FatherScript.SectionDirZ[index] = transform.forward;
+        }
+
 
     }
 
@@ -90,11 +85,15 @@ public class CappedSectionFollow : MonoBehaviour {
     {
         if (followPosition)
         {
-           // Shader.SetGlobalVector("_SectionCentre", transform.position);
+            // Shader.SetGlobalVector("_SectionCentre", transform.position);
             //Shader.SetGlobalVector("_SectionScale", transform.localScale);
 
-            FatherScript.SectionCentre[index] = transform.position;
-            FatherScript.SectionScale[index] = transform.localScale;
+            if (FatherScript != null)
+            {
+                FatherScript.SectionCentre[index] = transform.position;
+                FatherScript.SectionScale[index] = transform.localScale;
+            }
+
         }
 	}
 

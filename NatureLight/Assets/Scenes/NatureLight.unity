@@ -4532,7 +4532,7 @@ GameObject:
   - component: {fileID: 187991244}
   - component: {fileID: 187991243}
   m_Layer: 0
-  m_Name: AllWindows
+  m_Name: AllWindowsAndLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4549,8 +4549,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a2128cbb6f28974c85e43d5a9eff68f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Wall: {fileID: 0}
-  ClipMaterial: {fileID: 0}
   AllCreatedGameObject: []
   SeletedGameObject: []
   SectionDirX:
@@ -38526,7 +38524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1404402771
 MonoBehaviour:
   m_ObjectHideFlags: 0
